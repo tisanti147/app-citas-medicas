@@ -1,0 +1,44 @@
+.campo{
+    display: flex;
+}
+
+.campo label{
+    flex-basis: 25rem;
+}
+
+.campo input[type="text"],
+.campo input[type="number"],
+.campo input[type="date"],
+textarea
+{
+    margin-bottom: 2em;
+    width: 100%;
+    border: .8px solid white;
+}
+
+.campo input[type="submit"]{
+    margin-bottom: 1em;
+    border: .8px solid white;
+    background-color: rgb(105, 105, 105);
+}
+
+/*.seccion{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #4b4b4b;
+    opacity: .8;
+    color: white;
+}*/
+
+.seccion{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    width: 40%;
+    border-radius: 8px;
+    opacity: .8;
+    font-size: large;
+}
+
+.seccion fieldset{
+border: .8px solid #e1e1e1;
+}

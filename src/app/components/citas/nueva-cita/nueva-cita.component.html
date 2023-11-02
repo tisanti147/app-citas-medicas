@@ -1,0 +1,30 @@
+<section class="seccion">
+    <fieldset>
+        <legend>Registrar Cita</legend>
+        <form id="formulario" (ngSubmit)="agregarCita()">
+            <div class="campo">
+                <label for="nombrePaciente">Nombre del paciente</label>
+                <input type="text" id="nombrePaciente" name="nombrePaciente" [(ngModel)]="cita.nombrePaciente">
+            </div>
+            <div class="campo">
+                <label for="fechaCita">Fecha Cita</label>
+                <input type="date" id="fechaCita" name="fechaCita" [(ngModel)]="cita.fechaCita">
+            </div>
+            <div class="campo">
+                <label for="horaCita">Hora Cita</label>
+                <input type="time" id="horaCita" name="horaCita" [(ngModel)]="cita.horaCita">
+            </div>
+            <div class="campo">
+                <label for="sintomas">Síntomas del paciente</label>
+                <textarea name="sintomas" id="sintomas" cols="30" rows="10" [(ngModel)]="cita.sintomas"></textarea>
+                
+            </div>
+            <div class="campo">
+                <input type="hidden" id="id" name="id" [(ngModel)]="cita.id">
+            </div>
+            <div class="campo">
+                <input type="submit" value="Agregar cita" id="agregar">
+            </div>
+        </form>
+    </fieldset>
+</section>
